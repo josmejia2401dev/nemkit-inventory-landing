@@ -1,3 +1,3 @@
 export const environment = {
-  appUrl: "https://nemkit-inventory-web.onrender.com",
+  appUrl: "https://nemkit-inventory-web.netlify.app",
 };
