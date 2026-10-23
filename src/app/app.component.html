@@ -31,11 +31,12 @@
 <main id="inicio">
   <section class="hero section-shell">
     <div class="hero-copy">
-      <div class="eyebrow"><span></span> INVENTARIO SIMPLE, NEGOCIO EN MARCHA</div>
-      <h1>Ten todo en orden.<br /><em>Haz crecer</em> tu negocio.</h1>
+      <div class="eyebrow"><span></span> EL ERP LIGERO PARA TU NEGOCIO</div>
+      <h1>Inventario, ventas y domicilios.<br /><em>Todo tu negocio</em> en un lugar.</h1>
       <p class="hero-description">
-        Productos, existencias y movimientos en un solo lugar. Toma decisiones
-        con claridad y dedica más tiempo a lo que hace avanzar tu negocio.
+        Controla existencias, registra ventas y compras, gestiona tu equipo,
+        conoce a tus clientes y organiza los domicilios. Pensado para tiendas,
+        restaurantes, ferreterías y distribuidoras.
       </p>
       <div class="hero-actions">
         <a class="button" [href]="registerUrl">
@@ -81,9 +82,9 @@
             </div>
             <div class="activity-panel">
               <div class="panel-title"><span>Movimientos</span><small>Ver todos ↗</small></div>
-              <div class="activity-row"><i class="activity-dot activity-dot--in">↑</i><span><b>Entrada de productos</b><small>Hoy, 9:42 a. m.</small></span><strong>+24</strong></div>
-              <div class="activity-row"><i class="activity-dot activity-dot--out">↓</i><span><b>Venta registrada</b><small>Ayer, 4:16 p. m.</small></span><strong>−8</strong></div>
-              <div class="activity-row"><i class="activity-dot activity-dot--in">↑</i><span><b>Ajuste de inventario</b><small>Ayer, 11:08 a. m.</small></span><strong>+3</strong></div>
+              <div class="activity-row"><i class="activity-dot activity-dot--out">↓</i><span><b>Venta a domicilio</b><small>Hoy, 9:42 a. m.</small></span><strong>−6</strong></div>
+              <div class="activity-row"><i class="activity-dot activity-dot--in">↑</i><span><b>Entrada de mercancía</b><small>Ayer, 4:16 p. m.</small></span><strong>+24</strong></div>
+              <div class="activity-row"><i class="activity-dot activity-dot--out">↓</i><span><b>Venta en caja</b><small>Ayer, 11:08 a. m.</small></span><strong>−8</strong></div>
             </div>
           </div>
         </div>
@@ -96,39 +97,39 @@
   <section class="trust-strip" aria-label="Ventajas">
     <div class="trust-inner">
       <span>TODO LO QUE NECESITAS PARA</span>
-      <strong><i>✳</i> CONTROLAR EXISTENCIAS</strong>
+      <strong><i>✳</i> VENDER Y FACTURAR</strong>
       <b></b>
-      <strong><i>✳</i> REGISTRAR MOVIMIENTOS</strong>
+      <strong><i>✳</i> GESTIONAR TU EQUIPO</strong>
       <b></b>
-      <strong><i>✳</i> DECIDIR CON CONFIANZA</strong>
+      <strong><i>✳</i> ENTREGAR A DOMICILIO</strong>
     </div>
   </section>
 
   <section id="beneficios" class="benefits section-shell section-spacing">
     <div class="section-intro">
       <p class="eyebrow">MENOS DUDAS, MÁS CONTROL</p>
-      <h2>La tranquilidad de saber<br />qué tienes y qué necesitas.</h2>
-      <p>La información correcta te ayuda a atender mejor, comprar a tiempo y mantener cada producto bajo control.</p>
+      <h2>Más que inventario:<br />todo tu negocio bajo control.</h2>
+      <p>Existencias, ventas, equipo, clientes y entregas conectados. La información correcta para atender mejor y crecer con confianza.</p>
     </div>
     <div class="benefit-grid">
       <article class="benefit-card benefit-card--feature">
         <span class="benefit-number">01 / VISIBILIDAD</span>
         <div class="benefit-icon benefit-icon--sage"><span class="mini-chart"><i></i><i></i><i></i><i></i></span></div>
-        <h3>Entiende tu inventario de un vistazo</h3>
-        <p>Consulta el valor de tus existencias, los productos agotados y las alertas de stock bajo desde un solo panel.</p>
+        <h3>Tu negocio de un vistazo</h3>
+        <p>Valor del inventario, productos agotados, ventas por empleado y estado de los domicilios, todo en un panel.</p>
         <a [href]="registerUrl">Explora el panel <span>↗</span></a>
       </article>
       <article class="benefit-card">
-        <span class="benefit-number">02 / ORGANIZACIÓN</span>
+        <span class="benefit-number">02 / EQUIPO</span>
         <div class="benefit-icon benefit-icon--gold"><span class="stack-icon"><i></i><i></i><i></i></span></div>
-        <h3>Encuentra cada producto fácilmente</h3>
-        <p>Organiza por categorías y localiza artículos por nombre, SKU o código de barras.</p>
+        <h3>Gestiona a tu equipo</h3>
+        <p>Registra empleados con su cargo (cajero, vendedor, domiciliario, bodeguero, mesero) y dale acceso según su rol.</p>
       </article>
       <article class="benefit-card">
-        <span class="benefit-number">03 / TRAZABILIDAD</span>
-        <div class="benefit-icon benefit-icon--lavender"><span class="motion-icon">↕</span></div>
-        <h3>Conoce cada entrada y salida</h3>
-        <p>Registra compras, ventas, ajustes, daños y consumo interno con fecha, usuario y observaciones.</p>
+        <span class="benefit-number">03 / CLIENTES</span>
+        <div class="benefit-icon benefit-icon--lavender"><span class="motion-icon">★</span></div>
+        <h3>Conoce a tus clientes</h3>
+        <p>Búscalos por celular o documento y ve su historial, total de compras y nivel de fidelidad para atenderlos mejor.</p>
       </article>
     </div>
   </section>
@@ -137,15 +138,15 @@
     <div class="feature-band-inner section-shell">
       <div class="feature-copy">
         <p class="eyebrow eyebrow--light">UNA FORMA MÁS CLARA DE TRABAJAR</p>
-        <h2>De la entrada al movimiento,<br /><em>todo queda registrado.</em></h2>
-        <p>Un sistema práctico para mantener tu catálogo actualizado y tener contexto cuando algo cambia.</p>
+        <h2>De la venta a la entrega,<br /><em>todo queda registrado.</em></h2>
+        <p>Un sistema práctico que conecta tus existencias con cada venta, compra y domicilio, con trazabilidad de quién hizo qué.</p>
         <ul>
-          <li><span>✓</span> Catálogo con costos, precios y niveles mínimos</li>
-          <li><span>✓</span> Historial de movimientos por producto</li>
-          <li><span>✓</span> Alertas para anticipar faltantes</li>
-          <li><span>✓</span> Acceso seguro a tu inventario</li>
+          <li><span>✓</span> Ventas y compras que ajustan el stock al instante</li>
+          <li><span>✓</span> Domicilios con estados, domiciliario y evidencia de entrega</li>
+          <li><span>✓</span> Trazabilidad por empleado y reportes de venta</li>
+          <li><span>✓</span> Clientes con historial y niveles de fidelidad</li>
         </ul>
-        <a class="button button--light" [href]="registerUrl">Conoce Nemkit Inventario <span>↗</span></a>
+        <a class="button button--light" [href]="registerUrl">Conoce Nemkit <span>↗</span></a>
       </div>
       <div class="feature-art" aria-hidden="true">
         <div class="orbit orbit--outer"></div><div class="orbit orbit--inner"></div>
@@ -164,9 +165,9 @@
       <p>Da el primer paso y construye una vista clara de tus productos y existencias.</p>
     </div>
     <div class="steps-grid">
-      <article><span class="step-index">01</span><div class="step-line"></div><h3>Agrega tus productos</h3><p>Crea tu catálogo con precios, categorías y el nivel mínimo que quieres mantener.</p></article>
-      <article><span class="step-index">02</span><div class="step-line"></div><h3>Registra movimientos</h3><p>Documenta compras, ventas y ajustes para que las existencias se mantengan actualizadas.</p></article>
-      <article><span class="step-index">03</span><div class="step-line"></div><h3>Decide con información</h3><p>Revisa alertas e historial para saber qué reponer y cómo se mueve tu inventario.</p></article>
+      <article><span class="step-index">01</span><div class="step-line"></div><h3>Arma tu catálogo y tu equipo</h3><p>Crea tus productos con precios y mínimos, y registra a tus empleados con su cargo y acceso.</p></article>
+      <article><span class="step-index">02</span><div class="step-line"></div><h3>Vende y entrega</h3><p>Registra ventas en sitio o a domicilio; el stock se ajusta solo y cada entrega queda con su trazabilidad.</p></article>
+      <article><span class="step-index">03</span><div class="step-line"></div><h3>Decide con información</h3><p>Revisa ventas por empleado, clientes frecuentes, alertas de stock y estado de domicilios en tu panel.</p></article>
     </div>
   </section>
 
@@ -174,8 +175,8 @@
     <div class="cta-decoration cta-decoration--one"></div><div class="cta-decoration cta-decoration--two"></div>
     <div class="cta-content">
       <p class="eyebrow eyebrow--light">TU SIGUIENTE PASO</p>
-      <h2>Un negocio más organizado<br />empieza con una buena vista.</h2>
-      <p>Reúne tus productos y movimientos en un espacio hecho para darte claridad.</p>
+      <h2>Un negocio más organizado<br />vende, entrega y fideliza mejor.</h2>
+      <p>Reúne inventario, ventas, equipo, clientes y domicilios en un solo espacio hecho para tu pyme.</p>
       <a class="button button--light" [href]="registerUrl">Empieza con Nemkit <span>↗</span></a>
     </div>
     <div class="cta-mark" aria-hidden="true">n<span>✳</span></div>
