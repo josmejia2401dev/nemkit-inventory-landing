@@ -21,6 +21,7 @@
 
   <nav class="main-nav" [class.main-nav--open]="menuOpen()" aria-label="Principal">
     <a href="#beneficios" (click)="closeMenu()">Beneficios</a>
+    <a href="#restaurantes" (click)="closeMenu()">Restaurantes</a>
     <a href="#funcionalidades" (click)="closeMenu()">Funcionalidades</a>
     <a href="#como-funciona" (click)="closeMenu()">Cómo funciona</a>
     <a class="nav-login" [href]="loginUrl">Iniciar sesión</a>
@@ -31,12 +32,13 @@
 <main id="inicio">
   <section class="hero section-shell">
     <div class="hero-copy">
-      <div class="eyebrow"><span></span> EL ERP LIGERO PARA TU NEGOCIO</div>
-      <h1>Inventario, ventas y domicilios.<br /><em>Todo tu negocio</em> en un lugar.</h1>
+      <div class="eyebrow"><span></span> EL ERP LIGERO PARA TIENDAS Y RESTAURANTES</div>
+      <h1>Inventario, ventas y <em>restaurante</em>.<br />Todo tu negocio en un lugar.</h1>
       <p class="hero-description">
         Controla existencias, registra ventas y compras, gestiona tu equipo,
-        conoce a tus clientes y organiza los domicilios. Pensado para tiendas,
-        restaurantes, ferreterías y distribuidoras.
+        conoce a tus clientes y organiza los domicilios. ¿Tienes un restaurante?
+        Activa el modo restaurante y suma cocina, mesas y comandas, sin cambiar
+        de software.
       </p>
       <div class="hero-actions">
         <a class="button" [href]="registerUrl">
@@ -99,7 +101,7 @@
       <span>TODO LO QUE NECESITAS PARA</span>
       <strong><i>✳</i> VENDER Y FACTURAR</strong>
       <b></b>
-      <strong><i>✳</i> GESTIONAR TU EQUIPO</strong>
+      <strong><i>✳</i> ATENDER COCINA Y MESAS</strong>
       <b></b>
       <strong><i>✳</i> ENTREGAR A DOMICILIO</strong>
     </div>
@@ -108,8 +110,8 @@
   <section id="beneficios" class="benefits section-shell section-spacing">
     <div class="section-intro">
       <p class="eyebrow">MENOS DUDAS, MÁS CONTROL</p>
-      <h2>Más que inventario:<br />todo tu negocio bajo control.</h2>
-      <p>Existencias, ventas, equipo, clientes y entregas conectados. La información correcta para atender mejor y crecer con confianza.</p>
+      <h2>Más que inventario:<br />tienda o restaurante bajo control.</h2>
+      <p>Existencias, ventas, cocina, equipo, clientes y entregas conectados. La información correcta para atender mejor y crecer con confianza.</p>
     </div>
     <div class="benefit-grid">
       <article class="benefit-card benefit-card--feature">
@@ -134,6 +136,34 @@
     </div>
   </section>
 
+  <section id="restaurantes" class="restaurant-band">
+    <div class="restaurant-inner section-shell">
+      <div class="restaurant-art" aria-hidden="true">
+        <div class="resto-ticket">
+          <div class="resto-ticket-head"><span>MESA 4</span><small>COMANDA #128</small></div>
+          <div class="resto-line"><b>2×</b> Pollo guisado</div>
+          <div class="resto-line"><b>1×</b> Limonada natural</div>
+          <div class="resto-line"><b>1×</b> Porción de arroz</div>
+          <div class="resto-ticket-foot"><span class="resto-tag resto-tag--cook">En preparación</span><span class="resto-tag resto-tag--due">Por cobrar</span></div>
+        </div>
+        <div class="resto-chip resto-chip--table"><i>🍽</i><div><b>Mesas</b><small>Libre · En uso</small></div></div>
+        <div class="resto-chip resto-chip--kitchen"><i>👨‍🍳</i><div><b>Cocina</b><small>Pendiente → Listo</small></div></div>
+      </div>
+      <div class="restaurant-copy">
+        <p class="eyebrow eyebrow--light">MODO RESTAURANTE INCLUIDO</p>
+        <h2>¿Tienes un restaurante?<br /><em>También es para ti.</em></h2>
+        <p>Nemkit no es solo para tiendas. Activa el modo restaurante desde la configuración y el mismo sistema suma todo lo que tu cocina necesita, sin pagar aparte ni cambiar de herramienta.</p>
+        <ul class="restaurant-features">
+          <li><span>🍳</span><div><b>Cocina y comandas</b><p>Los pedidos entran a la cola de cocina y avanzan de pendiente a preparando, listo y servido.</p></div></li>
+          <li><span>🍽️</span><div><b>Mesas</b><p>Crea tus mesas y mira cuáles están libres o en uso. Puedes seguir sumando platos a una mesa ocupada.</p></div></li>
+          <li><span>📖</span><div><b>Platos con receta</b><p>Define insumos por plato (opcional) y al vender se descuentan del stock. Sin medidas exactas, también funciona.</p></div></li>
+          <li><span>🧾</span><div><b>Pedido por cobrar</b><p>El pedido en mesa queda pendiente y solo se vuelve venta al pagar. ¿Se canceló? Regístralo con el motivo.</p></div></li>
+        </ul>
+        <a class="button button--light" [href]="registerUrl">Prueba el modo restaurante <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
   <section id="funcionalidades" class="feature-band">
     <div class="feature-band-inner section-shell">
       <div class="feature-copy">
@@ -142,6 +172,7 @@
         <p>Un sistema práctico que conecta tus existencias con cada venta, compra y domicilio, con trazabilidad de quién hizo qué.</p>
         <ul>
           <li><span>✓</span> Ventas y compras que ajustan el stock al instante</li>
+          <li><span>✓</span> Modo restaurante: cocina, mesas y comandas incluidas</li>
           <li><span>✓</span> Domicilios con estados, domiciliario y evidencia de entrega</li>
           <li><span>✓</span> Trazabilidad por empleado y reportes de venta</li>
           <li><span>✓</span> Clientes con historial y niveles de fidelidad</li>
@@ -165,9 +196,9 @@
       <p>Da el primer paso y construye una vista clara de tus productos y existencias.</p>
     </div>
     <div class="steps-grid">
-      <article><span class="step-index">01</span><div class="step-line"></div><h3>Arma tu catálogo y tu equipo</h3><p>Crea tus productos con precios y mínimos, y registra a tus empleados con su cargo y acceso.</p></article>
-      <article><span class="step-index">02</span><div class="step-line"></div><h3>Vende y entrega</h3><p>Registra ventas en sitio o a domicilio; el stock se ajusta solo y cada entrega queda con su trazabilidad.</p></article>
-      <article><span class="step-index">03</span><div class="step-line"></div><h3>Decide con información</h3><p>Revisa ventas por empleado, clientes frecuentes, alertas de stock y estado de domicilios en tu panel.</p></article>
+      <article><span class="step-index">01</span><div class="step-line"></div><h3>Elige tu tipo de negocio</h3><p>Tienda o restaurante. Arma tu catálogo (productos o platos) y registra a tu equipo con su cargo y acceso.</p></article>
+      <article><span class="step-index">02</span><div class="step-line"></div><h3>Vende, cocina y entrega</h3><p>Toma pedidos en mesa, en caja o a domicilio. La cocina recibe la comanda y el stock se ajusta solo.</p></article>
+      <article><span class="step-index">03</span><div class="step-line"></div><h3>Cobra y decide con información</h3><p>Cierra el pedido al pagar y revisa ventas por empleado, clientes frecuentes y alertas de stock en tu panel.</p></article>
     </div>
   </section>
 
@@ -175,8 +206,8 @@
     <div class="cta-decoration cta-decoration--one"></div><div class="cta-decoration cta-decoration--two"></div>
     <div class="cta-content">
       <p class="eyebrow eyebrow--light">TU SIGUIENTE PASO</p>
-      <h2>Un negocio más organizado<br />vende, entrega y fideliza mejor.</h2>
-      <p>Reúne inventario, ventas, equipo, clientes y domicilios en un solo espacio hecho para tu pyme.</p>
+      <h2>Tienda o restaurante,<br />más organizado vende mejor.</h2>
+      <p>Reúne inventario, ventas, cocina, equipo, clientes y domicilios en un solo espacio hecho para tu negocio.</p>
       <a class="button button--light" [href]="registerUrl">Empieza con Nemkit <span>↗</span></a>
     </div>
     <div class="cta-mark" aria-hidden="true">n<span>✳</span></div>
