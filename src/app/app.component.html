@@ -155,12 +155,12 @@
       <div class="restaurant-copy">
         <p class="eyebrow eyebrow--light">MODO RESTAURANTE INCLUIDO</p>
         <h2>¿Tienes un restaurante?<br /><em>También es para ti.</em></h2>
-        <p>Nemkit no es solo para tiendas. Activa el modo restaurante desde la configuración y el mismo sistema suma todo lo que tu cocina necesita, sin pagar aparte ni cambiar de herramienta.</p>
+        <p>Nemkit no es solo para tiendas. Activa el modo restaurante desde la configuración y conecta comandas, mesas, cocina, ventas e inventario en el mismo sistema.</p>
         <ul class="restaurant-features">
           <li><span>🍳</span><div><b>Cocina y comandas</b><p>Los pedidos entran a la cola de cocina y avanzan de pendiente a preparando, listo y servido.</p></div></li>
           <li><span>🍽️</span><div><b>Mesas</b><p>Crea tus mesas y mira cuáles están libres o en uso. Puedes seguir sumando platos a una mesa ocupada.</p></div></li>
-          <li><span>📖</span><div><b>Platos con receta</b><p>Define insumos por plato (opcional) y al vender se descuentan del stock. Sin medidas exactas, también funciona.</p></div></li>
-          <li><span>🧾</span><div><b>Pedido por cobrar</b><p>El pedido en mesa queda pendiente y solo se vuelve venta al pagar. ¿Se canceló? Regístralo con el motivo.</p></div></li>
+          <li><span>📖</span><div><b>Platos con receta</b><p>Asocia insumos al plato para descontarlos del inventario al vender. También puedes vender platos sin receta; en ese caso no se descuentan ingredientes automáticamente.</p></div></li>
+          <li><span>🧾</span><div><b>Cobros y cancelaciones</b><p>Deja los pedidos en mesa pendientes de cobro y registra el pago cuando corresponda. Consulta las cancelaciones por motivo, cliente, empleado y responsable.</p></div></li>
         </ul>
         <a class="button button--light" [href]="registerUrl">Prueba el modo restaurante <span>↗</span></a>
       </div>
@@ -174,10 +174,10 @@
         <h2>De la venta a la entrega,<br /><em>todo queda registrado.</em></h2>
         <p>Un sistema práctico que conecta tus existencias con cada venta, compra y domicilio, con trazabilidad de quién hizo qué.</p>
         <ul>
-          <li><span>✓</span> Ventas y compras que ajustan el stock al instante</li>
+          <li><span>✓</span> Movimientos por ventas, compras y ajustes que cambian existencias</li>
           <li><span>✓</span> Modo restaurante: cocina, mesas y comandas incluidas</li>
           <li><span>✓</span> Domicilios con estados, domiciliario y evidencia de entrega</li>
-          <li><span>✓</span> Trazabilidad por empleado y reportes de venta</li>
+          <li><span>✓</span> Reportes de ventas por período y empleado, y de cancelaciones</li>
           <li><span>✓</span> Clientes con historial y niveles de fidelidad</li>
         </ul>
         <a class="button button--light" [href]="registerUrl">Conoce Nemkit <span>↗</span></a>
@@ -200,8 +200,8 @@
     </div>
     <div class="steps-grid">
       <article><span class="step-index">01</span><div class="step-line"></div><h3>Elige tu tipo de negocio</h3><p>Tienda o restaurante. Arma tu catálogo (productos o platos) y registra a tu equipo con su cargo y acceso.</p></article>
-      <article><span class="step-index">02</span><div class="step-line"></div><h3>Vende, cocina y entrega</h3><p>Toma pedidos en mesa, en caja o a domicilio. La cocina recibe la comanda y el stock se ajusta solo.</p></article>
-      <article><span class="step-index">03</span><div class="step-line"></div><h3>Cobra y decide con información</h3><p>Cierra el pedido al pagar y revisa ventas por empleado, clientes frecuentes y alertas de stock en tu panel.</p></article>
+      <article><span class="step-index">02</span><div class="step-line"></div><h3>Vende, cocina y entrega</h3><p>Toma pedidos en mesa, en caja o a domicilio. La cocina recibe la comanda y el inventario registra los cambios de existencias.</p></article>
+      <article><span class="step-index">03</span><div class="step-line"></div><h3>Cobra y decide con información</h3><p>Registra el cobro cuando ocurra y revisa ventas efectivas, cancelaciones, clientes frecuentes y alertas de stock.</p></article>
     </div>
   </section>
 
