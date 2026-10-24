@@ -1,4 +1,4 @@
-import { Component, signal } from "@angular/core";
+import { Component, HostListener, signal } from "@angular/core";
 import { environment } from "../environments/environment";
 
 @Component({
@@ -24,5 +24,10 @@ export class AppComponent {
 
   toggleMenu(): void {
     this.menuOpen.update((isOpen) => !isOpen);
+  }
+
+  @HostListener("document:keydown.escape")
+  closeMenuWithEscape(): void {
+    if (this.menuOpen()) this.closeMenu();
   }
 }

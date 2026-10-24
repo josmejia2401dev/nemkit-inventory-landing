@@ -1,4 +1,6 @@
-<header class="site-header">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header id="inicio" class="site-header">
   <a class="brand" href="#inicio" aria-label="Nemkit Inventario, inicio">
     <span class="brand-mark" aria-hidden="true">
       <svg viewBox="0 0 48 48" fill="none">
@@ -13,13 +15,14 @@
     class="menu-toggle"
     type="button"
     [attr.aria-expanded]="menuOpen()"
-    aria-label="Abrir menú"
+    aria-controls="main-navigation"
+    [attr.aria-label]="menuOpen() ? 'Cerrar menú' : 'Abrir menú'"
     (click)="toggleMenu()"
   >
     <span></span><span></span>
   </button>
 
-  <nav class="main-nav" [class.main-nav--open]="menuOpen()" aria-label="Principal">
+  <nav id="main-navigation" class="main-nav" [class.main-nav--open]="menuOpen()" aria-label="Principal">
     <a href="#beneficios" (click)="closeMenu()">Beneficios</a>
     <a href="#restaurantes" (click)="closeMenu()">Restaurantes</a>
     <a href="#funcionalidades" (click)="closeMenu()">Funcionalidades</a>
@@ -29,7 +32,7 @@
   </nav>
 </header>
 
-<main id="inicio">
+<main id="contenido">
   <section class="hero section-shell">
     <div class="hero-copy">
       <div class="eyebrow"><span></span> EL ERP LIGERO PARA TIENDAS Y RESTAURANTES</div>
@@ -56,7 +59,7 @@
       </div>
     </div>
 
-    <div class="hero-visual" aria-label="Vista previa del panel de inventario">
+    <div class="hero-visual" role="img" aria-label="Vista ilustrativa del panel de inventario de Nemkit">
       <div class="visual-glow"></div>
       <div class="dashboard-window">
         <div class="window-topbar">
@@ -92,7 +95,7 @@
         </div>
       </div>
       <div class="floating-note"><span>↗</span><div><b>Visibilidad en tiempo real</b><small>Tu inventario, siempre al día</small></div></div>
-      <div class="visual-caption"><span></span> Una vista más clara de tu negocio</div>
+      <div class="visual-caption"><span></span> Vista ilustrativa de Nemkit</div>
     </div>
   </section>
 

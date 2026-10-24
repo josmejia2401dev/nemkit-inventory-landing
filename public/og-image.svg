@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Nemkit para tiendas y restaurantes</title>
+  <desc id="description">Inventario, ventas, compras, cocina y domicilios conectados en un solo lugar.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17382f"/>
+      <stop offset="1" stop-color="#285944"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffef8"/>
+      <stop offset="1" stop-color="#eef3e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1045" cy="90" r="260" fill="#e6d4a5" opacity=".08"/>
+  <circle cx="1080" cy="550" r="210" fill="#d5e1c9" opacity=".07"/>
+  <g transform="translate(80 72)">
+    <rect width="56" height="56" rx="17" fill="#f4f1e5"/>
+    <path d="m14 22 14-8 14 8v15l-14 8-14-8V22Z" fill="none" stroke="#285944" stroke-width="3" stroke-linejoin="round"/>
+    <path d="m14 22 14 8 14-8M28 30v15" fill="none" stroke="#285944" stroke-width="3" stroke-linecap="round"/>
+    <text x="72" y="26" fill="#f6f4e9" font-family="Arial,sans-serif" font-size="25" font-weight="700">nemkit</text>
+    <text x="73" y="47" fill="#bdcbbd" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="3">INVENTARIO</text>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <text x="82" y="250" fill="#d9c48d" font-size="16" font-weight="700" letter-spacing="3">PARA TIENDAS Y RESTAURANTES</text>
+    <text x="78" y="333" fill="#fffdf5" font-size="62" font-weight="700" letter-spacing="-2">Tu negocio,</text>
+    <text x="78" y="407" fill="#fffdf5" font-size="62" font-weight="700" letter-spacing="-2">más <tspan fill="#e2cc91">organizado.</tspan></text>
+    <text x="82" y="463" fill="#cfdbcf" font-size="22">Inventario, ventas, compras, cocina</text>
+    <text x="82" y="494" fill="#cfdbcf" font-size="22">y domicilios en un solo lugar.</text>
+    <rect x="82" y="535" width="236" height="55" rx="14" fill="#ead59d"/>
+    <text x="108" y="570" fill="#234b39" font-size="18" font-weight="700">Conoce Nemkit  →</text>
+  </g>
+  <g transform="translate(695 132)">
+    <rect x="34" y="20" width="390" height="336" rx="28" fill="url(#card)" opacity=".98"/>
+    <rect x="34" y="20" width="390" height="54" rx="28" fill="#e8eee4"/>
+    <path d="M34 47a27 27 0 0 1 27-27h336a27 27 0 0 1 27 27v27H34V47Z" fill="#e8eee4"/>
+    <circle cx="65" cy="47" r="6" fill="#b9c7b8"/><circle cx="86" cy="47" r="6" fill="#b9c7b8"/><circle cx="107" cy="47" r="6" fill="#b9c7b8"/>
+    <text x="64" y="111" fill="#6c7c6d" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">RESUMEN DE TU NEGOCIO</text>
+    <rect x="64" y="132" width="150" height="94" rx="15" fill="#f3f6ef" stroke="#e0e8dd"/>
+    <rect x="230" y="132" width="164" height="94" rx="15" fill="#f8f2e5" stroke="#eee4ce"/>
+    <text x="82" y="164" fill="#758577" font-family="Arial,sans-serif" font-size="12">Productos activos</text>
+    <text x="82" y="202" fill="#285944" font-family="Arial,sans-serif" font-size="32" font-weight="700">248</text>
+    <text x="248" y="164" fill="#9b8660" font-family="Arial,sans-serif" font-size="12">Ventas del mes</text>
+    <text x="248" y="202" fill="#7a6845" font-family="Arial,sans-serif" font-size="29" font-weight="700">$ 8.4 M</text>
+    <text x="64" y="267" fill="#425c49" font-family="Arial,sans-serif" font-size="15" font-weight="700">Actividad reciente</text>
+    <path d="M66 321c36-33 49-3 82-24s46 9 75-12 43 8 72-23 42 3 91-36" fill="none" stroke="#5d8a68" stroke-width="5" stroke-linecap="round"/>
+    <path d="M66 322h328M66 297h328M66 273h328" stroke="#dfe7dc" stroke-width="1"/>
+    <rect x="310" y="375" width="178" height="73" rx="16" fill="#f7f4e8"/>
+    <circle cx="339" cy="411" r="14" fill="#dbe7d6"/>
+    <path d="m333 411 5 5 9-11" fill="none" stroke="#417153" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="362" y="406" fill="#355642" font-family="Arial,sans-serif" font-size="13" font-weight="700">Stock al día</text>
+    <text x="362" y="426" fill="#849187" font-family="Arial,sans-serif" font-size="10">Visibilidad en tiempo real</text>
+  </g>
+</svg>
